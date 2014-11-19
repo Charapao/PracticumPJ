@@ -15,9 +15,9 @@ var Ship = cc.Sprite.extend({
         update: function( dt ) {
 	
     	var pos = this.getPosition();
-        this.angle += 0.5;
-        this.vx = 0.5 * Math.sin(this.angle * Math.PI / 180);
-        this.vy = 0.5 * Math.cos(this.angle * Math.PI / 180);
+        // this.angle += 0.5;
+        // this.vx = 0.5 * Math.sin(this.angle * Math.PI / 180);
+        // this.vy = 0.5 * Math.cos(this.angle * Math.PI / 180);
         this.setRotation((this.angle)%360);
         if (pos.y > screenHeight) 
             this.setPosition(new cc.Point(pos.x + this.vx, 0 + this.vy));
